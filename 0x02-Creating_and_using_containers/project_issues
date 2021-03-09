@@ -1,0 +1,7 @@
+macOS Big Sur 11.3 installed with opencore
+
+- Since I am using docker-machine running on virtualbox, I had issues using the
+curl command to connect with nginx server created with 0x02-Nginx_web_server
+scipt.
+Solution: Look for DOCKER_IP in env and use this IP with curl command
+    curl $DOCKER_IP
