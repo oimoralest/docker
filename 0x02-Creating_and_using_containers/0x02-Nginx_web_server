@@ -1,0 +1,3 @@
+#!/bin/bash
+# This script runs an nginx container in detach mode
+docker container run --name web_server -d -p 80:80 nginx:latest

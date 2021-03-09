@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script lists all the running containers. If we also want to list not
+# running container we add -a option
+docker container ls

@@ -1,0 +1,3 @@
+#!/bin/bash
+# This scripts shows the Docker information more than docker version command
+docker info
