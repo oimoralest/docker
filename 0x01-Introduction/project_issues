@@ -1,0 +1,21 @@
+Problems that I had developing this project
+
+Now I am trying macOS Big Sur installed through OpenCore (https://dortania.github.io/OpenCore-Install-Guide/).
+
+Since I do not have an Intel CPU with virtualization capabilities and hypervisor support (I am using Ryzen 5 2600),
+I had to install to install docker machine through virtual box:
+(https://medium.com/crowdbotics/a-complete-one-by-one-guide-to-install-docker-on-your-mac-os-using-homebrew-e818eb4cfc3)
+
+For short, you need to install brew and run the following commands:
+- brew install docker docker-machine
+- brew cask install virtualbox or brew --cask install virtualbox
+- docker-machine create --driver virtualbox default
+- docker-machine env default
+- eval "$(docker-machine env default)"
+
+Each time I restart my macOS, I run the following commands to run docker:
+- docker-machine start default
+- docker-machine env default
+- eval "$(docker-machine env default)"
+
+On windows I did not have any problem yet
