@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script prints logs for the container created with 0x02-Nginx_web_server
+# script
+docker container logs web_server

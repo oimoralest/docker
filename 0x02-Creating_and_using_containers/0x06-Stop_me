@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script stop and removes an nginx container created in
+# 0x02-Nginx_web_server
+docker container rm -f web_server

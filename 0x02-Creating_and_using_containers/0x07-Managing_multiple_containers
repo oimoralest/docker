@@ -1,0 +1,17 @@
+#!/bin/bash
+# This script run an nginx, a mysql, and a httpd container:
+#   nginx should listen on 80:80, httpd on 8080:80, mysql on 3306:3306
+#   each container will run on detach mode
+#   mysql uses --env to pass in MYSQL_RANDOM_ROOT_PASSWORD=yes and shows this
+#   password generated
+#   each container will be listed and next removed
+docker run --name nginx -d -p 80:80 nginx:latest
+docker run --name apache -d -p 8080:80 httpd:latest
+docker run --name mysql -d -p 3306:3306 --env MYSQL_RANDOM_ROOT_PASSWORD=yes mysql:latest
+echo 'Listing containers:'
+sleep 2
+docker container ls
+echo 'Removing containers:'
+sleep 2
+docker container rm -f nginx apache mysql
+docker container ls

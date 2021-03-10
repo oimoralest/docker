@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script prints all the running process inside the container created with
+# 0x02-Nginx_web_server script
+docker container top web_server
