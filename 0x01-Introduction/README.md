@@ -1,6 +1,13 @@
 # Introduction
 ## Description
    Setting up OS to work with Docker
+
+   In requirements section you will get information about how to install all
+   the software that I used.
+
+## Content
+- [Requirements](#Requirements)
+- [References](#References)
 ## Requirements
 - [Docker Desktop](https://docs.docker.com/desktop/)
 - [Docker Compose](https://docs.docker.com/compose/install/)

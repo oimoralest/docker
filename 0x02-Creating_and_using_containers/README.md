@@ -3,7 +3,10 @@
     This project is about the basic usage of Docker containers
 
     Remember that at any time you can use docker --help or docker COMMAND --help
-    or docker COMMAND COMMAND --help to retrieve useful information
+    or docker COMMAND COMMAND --help to get useful information
+## Content
+- [Requeriments](#Requirements)
+- [References](#References)
 ## Requirements
 - Docker: version 20.10.3
 ## References
