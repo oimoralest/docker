@@ -1,0 +1,17 @@
+This file contains the commands used to create two containers with different
+Linux distributions
+
+Creates an Ubuntu container
+docker run -it --name ubuntu --rm ubuntu:14.04 bash
+Install curl
+apt-get update && apt-get install curl
+Checks curl version
+curl --version (version 7.35)
+
+Creates a Centos container
+docker run -it --name centos --rm centos:7 bash
+Install curl
+yum update curl
+Checks curl version
+curl --version (version 7.29)
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+# This script reopen a container interactive mode
+# To exit just type exit
+docker container start web_server
+docker container exec -it web_server bash

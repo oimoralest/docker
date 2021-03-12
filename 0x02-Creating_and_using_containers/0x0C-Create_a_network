@@ -1,0 +1,10 @@
+#!/bin/bash
+# This script lists the networks available, then creates a new network, 
+# list the networks again and removes the network created
+docker network ls
+sleep 1
+docker network create test_network
+docker network ls
+sleep 1
+docker network rm test_network
+

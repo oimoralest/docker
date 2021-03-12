@@ -1,0 +1,5 @@
+#!/bin/bash
+# This script displays stats about all running containers
+# To exit: ctrl + C
+./0x02-Nginx_web_server
+docker container stats
