@@ -1,0 +1,21 @@
+#!/bin/bash
+# This script runs the following commands:
+echo "1. Creating a new virtual network (default bridge driver)"
+docker network create round_robin
+sleep 2
+echo "2. Creating two containers from elasticsearch:2 with search alias"
+docker container run --network-alias search -d --name search1 --net round_robin elasticsearch:2
+docker container run --network-alias search -d --name search2 --net round_robin elasticsearch:2
+sleep 2
+echo "3. Running alpine container with nslookup command"
+docker container run --rm --net round_robin alpine nslookup search
+sleep 2
+echo "4. Running centos container with curl command"
+docker container run --rm --net round_robin centos:7 curl -s search:9200
+docker container run --rm --net round_robin centos:7 curl -s search:9200
+sleep 2
+echo "5. Removing elasticsearch containers"
+docker container rm -f search1 search2
+sleep 2
+echo "6. Removing network"
+docker network rm round_robin
