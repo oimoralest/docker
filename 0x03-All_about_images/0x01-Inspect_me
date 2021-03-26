@@ -1,0 +1,3 @@
+#!/bin/bash
+# This script displays information about an image
+docker image inspect nginx:latest

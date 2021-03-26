@@ -1,0 +1,11 @@
+#!/bin/bash
+# This script login to a docker Hub taking the username and password as
+# parameters and push an image, take it also as parameter, to a private repo
+if [ $# -eq 4 ]
+    then
+    docker login -u "$1" -p "$2"
+    docker image push "$1/$3:$4"
+else
+    echo "UsageError: ./0x02-Pushing_an_image username password image tag"
+fi
+docker logout
