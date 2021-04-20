@@ -1,0 +1,4 @@
+# This script creates a docker image from a dockerfile
+#!/bin/bash
+
+docker image build -t dockerfile .
