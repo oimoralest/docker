@@ -2,6 +2,9 @@
 
 ## Content
 
+- [nginx-compose](./nginx-compose/): Folder with a .yml file to recreate an nginx container and an apache container
+- [assigment_1](./assigment_1/): Folder with a .yml file to recrate a drupal enviroment
+
 ## References
 
 - [The YAML format: sample](https://yaml.org/start.html): YAML example

@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    drupal:
+        image: drupal
+        ports:
+            - '8080:80'
+
+    postgresql:
+        image: postgres:11
+        environment: 
+            POSTGRES_DB: 'drupal'
+            POSTGRES_USER: 'admin'
+            POSTGRES_PASSWORD: '321admin'
+
