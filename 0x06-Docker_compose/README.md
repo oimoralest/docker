@@ -4,6 +4,7 @@
 
 - [nginx-compose](./nginx-compose/): Folder with a .yml file to recreate an nginx container and an apache container
 - [assigment_1](./assigment_1/): Folder with a .yml file to recrate a drupal enviroment
+- [assigment_2](./assigment_2/): Folder with a .yml file to recrate a drupal enviroment with custom drupal image
 
 ## References
 
